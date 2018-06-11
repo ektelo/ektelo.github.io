@@ -18,6 +18,7 @@ plugins:
 github:
   repository_url: https://github.com/ektelo/ektelo
   is_user_page: false
+  is_project_page: true
 show_downloads: false
 
 # Exclude from processing.
