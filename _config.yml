@@ -17,6 +17,7 @@ plugins:
 # slate specific stuff
 github:
   repository_url: https://github.com/ektelo/ektelo
+  is_user_page: false
 show_downloads: false
 
 # Exclude from processing.
