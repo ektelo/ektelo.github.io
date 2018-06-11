@@ -5,15 +5,21 @@
 layout: default
 ---
 
-Ektelo is an operator-based framework for implementing privacy algorithms.  It is based on research that was first presented at SIGMOD 2018.
+Ektelo is a programming framework and system that aids programmers in developing differentially private programs with high utility.  Ektelo can be used to author programs for a variety of statistical tasks that involve answering counting queries over a table of arbitrary dimension.
+
+In Ektelo, a differentially private program is described as a *plan* over a high level library of *operators*.  Operators are organized into classes based on their functionality, which includes data transformations, data reductions, query selection and execution, and inference methods to combine noisy answers into a consistent estimate.
+<!-- In addition, there are operators to partition the data so that it can be split or its dimensionality can be reduced.  The available operators are drawn from state-of-the-art algorithms in the published differential privacy literature. -->
+
+The operator-based approach has following benefits:
+- *Privacy for free*. Any plan written in Ektelo will satisfy differential privacy.  The privacy of each operator has been vetted and the system ensures that any composition of operators satisfies differential privacy.
+- *Modularity*.  Ektelo enables code reuse as the same operator can be used in multiple programs.  This helps safety as the number of privacy-sensitive components is kept small.
+- *Transparency*.  By expressing algorithms as plans with operators from operator classes, it is easier to compare/contrast competing algorithms.
+<!-- - It also allows authors to easily modify algorithms. -->
+- *Flexibility*.  Users can take existing operators and recombine them in arbitrary ways -- allowing them to invent new algorithms that borrow ideas from the state-of-art -- without the need for privacy analysis.
+
+### Supporting publications
 
 Dan Zhang, Ryan McKenna, Ios Kotsogiannis, Michael Hay, Ashwin Machanavajjhala, and Gerome Miklau. 2018. [EKTELO: A Framework for Defining Differentially-Private Computations](https://dl.acm.org/citation.cfm?id=3196921). In Proceedings of the 2018 International Conference on Management of Data ([SIGMOD '18](https://sigmod2018.org)). ACM, New York, NY, USA, 115-130. DOI: [https://doi.org/10.1145/3183713.3196921](https://doi.org/10.1145/3183713.3196921)
-
-Features of ektelo:
-- w
-- x
-- y
-- z
 
 ### Contributors
 
@@ -28,11 +34,6 @@ Features of ektelo:
 ### Acknowledgements
 
 This project is supported by the NSF, DARPA and Center for Data Science at the University of Massachusetts College of Information and Computer Sciences.
-
-
-<!-- ![sponsor1]({{ "/assets/logo-nsf.png" | absolute_url }})
-![sponsor2]({{ "/assets/logo-darpa.jpg" | absolute_url }})
-![sponsor3]({{ "/assets/logo-cds-cics.png" | absolute_url }}) -->
 
 <img src="{{ "/assets/logo-nsf.png" | absolute_url }}" height="75" width="75">
 <img src="{{ "/assets/logo-darpa.jpg" | absolute_url }}" height="50">
