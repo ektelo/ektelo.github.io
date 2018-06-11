@@ -5,12 +5,14 @@
 layout: default
 ---
 
-Ektelo is an operator-based framework for implementing privacy algorithms.  It is based on research that was first presented at SIGMOD 2018:
+Ektelo is an operator-based framework for implementing privacy algorithms.  It is based on research that was first presented at SIGMOD 2018.
 
 Dan Zhang, Ryan McKenna, Ios Kotsogiannis, Michael Hay, Ashwin Machanavajjhala, and Gerome Miklau. 2018. [EKTELO: A Framework for Defining Differentially-Private Computations](https://dl.acm.org/citation.cfm?id=3196921). In Proceedings of the 2018 International Conference on Management of Data ([SIGMOD '18](https://sigmod2018.org)). ACM, New York, NY, USA, 115-130. DOI: [https://doi.org/10.1145/3183713.3196921](https://doi.org/10.1145/3183713.3196921)
 
-
-
+Features of ektelo:
+- x
+- y
+- z
 
 ### Contributors
 
